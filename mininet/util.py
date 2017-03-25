@@ -206,7 +206,7 @@ def retry( retries, delaySecs, fn, *args, **keywords ):
         tries += 1
     if tries >= retries:
         error( "*** gave up after %i retries\n" % tries )
-        exit( 1 )
+        #exit( 1 )
 
 def moveIntfNoRetry( intf, dstNode, printError=False ):
     """Move interface to node, without retrying.
